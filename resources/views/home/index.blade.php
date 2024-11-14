@@ -46,4 +46,43 @@
             </div>
         </div>
     </div>
+
+    <div class="container mx-auto px-4 py-10">
+        <div class="flex flex-col-reverse md:flex-row items-start justify-between">
+            <div class="w-full md:w-1/2 flex justify-center md:justify-start">
+                <img src="{{ asset('foto/3.png') }}" alt="Kids picking up trash"
+                    class="rounded-md w-full h-auto max-w-xs md:max-w-md lg:max-w-lg">
+            </div>
+    
+            <!-- Bagian Teks -->
+            <div class="w-full flex flex-col justify-start px-4 mb- space-y-4">
+                <!-- Judul Utama -->
+                <h1 class="text-4xl font-bold"> Mengelola Sampah </h1>
+                <!-- Sub Judul -->
+                <h2 class="text-4xl font-bold text-green-600"> Secara Bertanggung Jawab </h2>
+                <!-- Brand --> 
+                <h3 class="text-4xl font-bold">
+                    bersama <span class="inline">Waste<span class="text-blue-400">Journey</span></span>
+                </h3>
+    
+                <!-- Deskripsi -->
+                <p class="text-xl md:text-2xl mt-6">
+                    Waste<span class="text-blue-400">Journey</span> adalah platform yang dirancang khusus untuk membantu
+                    Anda dalam mengelola sampah rumah tangga secara mudah dan efisien. Kami menyediakan panduan praktis,
+                    sumber edukasi, yang memudahkan Anda memahami dan menjalankan proses pengurangan, pemilahan, dan
+                    daur ulang sampah di kehidupan sehari-hari.
+                </p>
+    
+                <!-- Tombol -->
+                <div class="pt-6">
+                    <button
+                        class="bg-green-500 hover:bg-green-600 text-black text-xl font-semibold py-4 px-12 rounded-full w-full md:w-auto">
+                        Selengkapnya
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
 </x-guest-layout>
