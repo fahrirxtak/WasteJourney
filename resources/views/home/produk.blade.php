@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-public-layout>
     {{-- ? Header --}}
     <div class="relative w-full h-[400px] sm:h-[500px] lg:h-[600px]">
         <!-- Background Image -->
@@ -23,47 +23,59 @@
     </div>
     {{-- ! Header End --}}
 
+
     {{-- ? Produk --}}
-    <div class="container mx-auto py-8 max-w-screen-lg">
-        <h2 class="text-2xl font-bold text-gray-800 mb-4">UNTUK PERSONAL</h2>
-        <div class="border-b-4 border-green-500 w-24 mb-6"></div>
+    <div class="container mx-auto py-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-4 text-center">
+            ALAT PENDUKUNG PENGOLAHAN SAMPAH
+        </h2>
+        <div class="border-b-4 border-green-500 w-24 mx-auto mb-6"></div>
 
-        <!-- Cards Section -->
-        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          <!-- Card 1 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
-            <img src="https://via.placeholder.com/300" alt="Komposter Lengkap" class="w-full h-48 object-cover mb-4">
-            <h3 class="text-lg font-semibold text-gray-800">Komposter Lengkap</h3>
-            <p class="text-gray-500 text-sm">Sustaination</p>
-            <p class="text-green-500 font-bold text-lg">Rp 236.000</p>
-          </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full px-8 lg:px-16">
+            <!-- Card 1 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-8 text-center group">
+                <div class="overflow-hidden">
+                    <img src="{{ asset('foto/bahan.webp') }}" alt="Capsule Waste Bin"
+                        class="w-52 h-52 mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Capsule Waste Bin</h3>
+                <p class="text-sm text-gray-500 mt-3">Dimensi: 100 × 30 × 75 cm</p>
+                <p class="text-xl font-bold text-[#12D719] mt-4">Rp 615.000</p>
+            </div>
 
-          <!-- Card 2 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
-            <img src="https://via.placeholder.com/300" alt="Composting Tools" class="w-full h-48 object-cover mb-4">
-            <div class="bg-teal-100 text-teal-600 text-xs font-bold px-2 py-1 rounded-full inline-block mb-2">Bali Only</div>
-            <h3 class="text-lg font-semibold text-gray-800">Composting Tools</h3>
-            <p class="text-gray-500 text-sm">EcoBali</p>
-            <p class="text-green-500 font-bold text-lg">Rp 1.550.000</p>
-          </div>
+            <!-- Card 2 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-8 text-center group">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/150" alt="Magobox XL Fullset"
+                        class="w-52 h-52  mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Magobox XL Fullset</h3>
+                <p class="text-sm text-gray-500 mt-3">Magobox id</p>
+                <p class="text-xl font-bold text-[#12D719] mt-4">Rp 615.000</p>
+            </div>
 
-          <!-- Card 3 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
-            <img src="https://via.placeholder.com/300" alt="Magokits" class="w-full h-48 object-cover mb-4">
-            <h3 class="text-lg font-semibold text-gray-800">Magokits</h3>
-            <p class="text-gray-500 text-sm">Magobox id</p>
-            <p class="text-green-500 font-bold text-lg">Rp 150.000</p>
-          </div>
+            <!-- Card 3 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-8 text-center group">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/150" alt="Magobox XL"
+                        class="w-52 h-52  mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Magobox XL</h3>
+                <p class="text-sm text-gray-500 mt-3">Magobox id</p>
+                <p class="text-xl font-bold text-[#12D719] mt-4">Rp 385.000</p>
+            </div>
 
-          <!-- Card 4 -->
-          <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center text-center p-4">
-            <img src="https://via.placeholder.com/300" alt="Kompor Biogas" class="w-full h-48 object-cover mb-4">
-            <h3 class="text-lg font-semibold text-gray-800">Kompor Biogas</h3>
-            <p class="text-gray-500 text-sm">EcoVerde Solutions</p>
-            <p class="text-green-500 font-bold text-lg">Rp 14.990.000</p>
-          </div>
+            <!-- Card 4 -->
+            <div class="bg-white border border-gray-200 rounded-lg shadow-md p-8 text-center group">
+                <div class="overflow-hidden">
+                    <img src="https://via.placeholder.com/150" alt="Magobox Mini Fullset"
+                        class="w-52 h-52  mx-auto mb-6 transform transition-transform duration-300 group-hover:scale-110" />
+                </div>
+                <h3 class="text-lg font-semibold text-gray-800">Magobox Mini Fullset</h3>
+                <p class="text-sm text-gray-500 mt-3">Magobox id</p>
+                <p class="text-xl font-bold text-[#12D719] mt-4">Rp 529.000</p>
+            </div>
         </div>
-      </div>
-
+    </div>
     {{-- ! Produk End --}}
-</x-guest-layout>
+</x-public-layout>

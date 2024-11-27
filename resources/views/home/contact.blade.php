@@ -1,5 +1,5 @@
-<x-guest-layout>
-    <div class="w-full md:w-full md:mt-0 md:ml-8 ">
+<x-public-layout>
+    <div class="w-full">
         <iframe class="w-full h-64 rounded-md"
             src="https://maps.google.com/maps?q=Jl.%20Cibangkong%20Lor,%20Kota%20Bandung,%20Jawa%20Barat&output=embed"
             frameborder="0" allowfullscreen>
@@ -7,12 +7,9 @@
     </div>
     <div class="min-h-screen py-12 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <!-- Map Section -->
-            <div id="map" class="h-96 w-full mb-8 rounded-lg shadow-md"></div> <!-- Peta -->
-
             <div class="lg:flex lg:gap-8"> <!-- Tambahkan gap untuk jarak antar kolom -->
                 <!-- Left Column - Contact Info -->
-                <div class="p-8 bg-gray-900 text-white lg:w-1/3">
+                <div class="p-8 text-white lg:w-1/3">
                     <!-- Informasi Kontak -->
                     <div>
                         <h2 class="text-2xl font-bold mb-6 text-black">Temukan Kantor Kami</h2>
@@ -129,4 +126,4 @@
             </div>
         </div>
     </div>
-</x-guest-layout>
+</x-public-layout>

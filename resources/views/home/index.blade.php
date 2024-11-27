@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-public-layout>
 
     {{-- ? Header  --}}
     <div class="relative flex items-center h-[60vh] bg-cover bg-center "
@@ -15,43 +15,41 @@
 
     {{-- ? Informasi  --}}
     <div
-        class="relative bg-white shadow-lg rounded-lg p-8 w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 transform -translate-y-16 z-10 ">
-        <!-- Card 1 -->
-        <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp"
-            style="animation-delay: 0.5s;">
-            <img src="{{ asset('info1.png') }}" alt="Informasi Praktis"
-                class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
-            <div>
-                <h3 class="text-xl font-semibold">Informasi Praktis</h3>
-                <p class="text-gray-600 mt-1 text-sm">Menyediakan langkah-langkah praktis dan sederhana untuk
-                    memilah sampah, mengurangi limbah plastik, dan melakukan daur ulang.</p>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp "
-            style="animation-delay: 1s;">
-            <img src="{{ asset('info2.png') }}" alt="Jemput Sampah"
-                class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
-            <div>
-                <h3 class="text-xl font-semibold">Jemput Sampah</h3>
-                <p class="text-gray-600 mt-1 text-sm">Layanan khusus untuk pengguna yang ingin berlangganan
-                    penjemputan sampah daur ulang secara berkala langsung dari rumah.</p>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp"
-            style="animation-delay: 1.5s;">
-            <img src="{{ asset('info3.png') }}" alt="Sumber Daya Edukasi"
-                class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
-            <div>
-                <h3 class="text-xl font-semibold">Sumber Daya Edukasi</h3>
-                <p class="text-gray-600 mt-1 text-sm">Beragam artikel yang mendidik pengguna tentang pentingnya
-                    pengelolaan sampah dan dampaknya terhadap lingkungan.</p>
-            </div>
+    class="relative bg-white shadow-lg rounded-lg p-8 w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 transform -translate-y-16 z-10 ">
+    <!-- Card 1 -->
+    <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp"
+        style="animation-delay: 0.5s;">
+        <img src="{{ asset('info1.png') }}" alt="Panduan Pengelolaan Sampah"
+            class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
+        <div>
+            <h3 class="text-xl font-semibold">Pengelolaan Sampah</h3>
+            <p class="text-gray-600 mt-1 text-sm">Panduan praktis untuk memilah sampah di rumah, mengurangi limbah plastik, dan mengelola sampah dengan lebih bijak.</p>
         </div>
     </div>
+
+    <!-- Card 2 -->
+    <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp "
+        style="animation-delay: 1s;">
+        <img src="{{ asset('info2.png') }}" alt="Kalkulator Jejak Sampah"
+            class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
+        <div>
+            <h3 class="text-xl font-semibold">Kalkulator Jejak Sampah</h3>
+            <p class="text-gray-600 mt-1 text-sm">Fitur untuk membantu Anda memahami jumlah sampah yang dihasilkan dan memberikan saran untuk pengelolaan yang lebih baik.</p>
+        </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="flex items-center text-left gap-4 group animate__animated animate__fadeInUp"
+        style="animation-delay: 1.5s;">
+        <img src="{{ asset('info3.png') }}" alt="Artikel Edukasi"
+            class="w-16 h-16 transform transition-transform duration-300 group-hover:scale-110">
+        <div>
+            <h3 class="text-xl font-semibold">Artikel Edukasi</h3>
+            <p class="text-gray-600 mt-1 text-sm">Artikel menarik dan mendalam tentang dampak positif pengelolaan sampah terhadap lingkungan dan kehidupan sehari-hari.</p>
+        </div>
+    </div>
+</div>
+
     {{-- ! informasi End --}}
 
     {{-- ? Tentang --}}
@@ -102,80 +100,7 @@
     {{-- ! Tentang End --}}
 
 
-    {{-- ? Layanan --}}
-    <div class="bg-white py-10" data-aos="fade-up">
-        <p class="text-center text-green-800 font-semibold mb-4" data-aos="fade-down">Apa yang Kami Tawarkan -</p>
-        <h1 class="text-center text-3xl mb-6 font-mogra" data-aos="fade-up" data-aos-delay="100">Layanan yang Kami
-            Tawarkan</h1>
-        <div class="flex flex-col md:flex-row justify-center gap-6 px-4 md:px-20">
 
-            <!-- Card 1 -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden md:w-1/3 group transition-all duration-300 hover:shadow-2xl md:mx-4"
-                data-aos="zoom-in" data-aos-delay="200">
-                <img src="{{ asset('foto/personal waste.jpg') }}" alt="Personal Waste Management"
-                    class="w-full h-48 object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-50">
-                <div class="relative -mt-10 flex justify-center group">
-                    <div
-                        class="bg-white p-4 rounded-full shadow-lg transition-all duration-300 group-hover:bg-green-500 group-hover:scale-90">
-                        <img src="{{ asset('foto/icont/personal waste.png') }}" alt="Icon 1"
-                            class="w-16 h-16 transition-all duration-300 group-hover:scale-75">
-                    </div>
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="font-semibold text-xl mb-2" data-aos="fade-up" data-aos-delay="300">Personal Waste
-                        Management</h3>
-                    <p class="text-gray-600 text-sm mb-4" data-aos="fade-up" data-aos-delay="400">
-                        WasteJourney memastikan sampah anorganik Anda dijemput secara rutin dan dipilah untuk didaur
-                        ulang, langsung dari rumah Anda.
-                    </p>
-                    <!-- Tombol panah -->
-                    <button
-                        class="bg-gray-200 p-2 rounded-full transition-all duration-300 group-hover:bg-green-500 group-hover:text-white"
-                        data-aos="fade-up" data-aos-delay="500">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                            class="w-5 h-5 text-gray-600 group-hover:text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden md:w-1/3 group transition-all duration-300 hover:shadow-2xl md:mx-4"
-                data-aos="zoom-in" data-aos-delay="300">
-                <img src="{{ asset('foto/send waste.jpg') }}" alt="Send Your Waste"
-                    class="w-full h-48 object-cover transition-all duration-300 group-hover:scale-105 group-hover:brightness-50">
-                <div class="relative -mt-10 flex justify-center group">
-                    <div
-                        class="bg-white p-4 rounded-full shadow-lg transition-all duration-300 group-hover:bg-green-500 group-hover:scale-90">
-                        <img src="{{ asset('foto/icont/send waste.png') }}" alt="Icon 2"
-                            class="w-16 h-16 transition-all duration-300 group-hover:scale-75">
-                    </div>
-                </div>
-                <div class="p-6 text-center">
-                    <h3 class="font-semibold text-xl mb-2" data-aos="fade-up" data-aos-delay="400">Send Your Waste
-                    </h3>
-                    <p class="text-gray-600 text-sm mb-4" data-aos="fade-up" data-aos-delay="500">
-                        Cukup kirimkan sampah daur ulang Anda ke titik drop-off yang tersedia. Kami memastikan sampah
-                        Anda diproses dengan cara yang ramah lingkungan.
-                    </p>
-                    <!-- Tombol panah -->
-                    <button
-                        class="bg-gray-200 p-2 rounded-full transition-all duration-300 group-hover:bg-green-500 group-hover:text-white"
-                        data-aos="fade-up" data-aos-delay="600">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor" class="w-5 h-5 text-gray-600 group-hover:text-white">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    {{-- ! Layanan End --}}
 
 
     {{-- ? Statistik --}}

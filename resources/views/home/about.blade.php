@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-public-layout>
     {{-- ? Header --}}
     <div class="relative w-full h-[400px] sm:h-[500px] lg:h-[600px]">
         <!-- Background Image -->
@@ -353,4 +353,4 @@
     </div>
 
     {{-- ! Team End --}}
-</x-guest-layout>
+</x-public-layout>

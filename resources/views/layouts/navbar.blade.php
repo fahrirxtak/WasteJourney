@@ -39,26 +39,22 @@
 {{-- Main Navigation --}}
 <nav class="bg-[#2E7D32] text-white py-2 sticky top-0 z-50 transition-all duration-300 ease-in-out" id="navbar">
     <div class="container mx-auto px-4">
-        <div class="relative flex justify-between items-center py-4">
+        <div class="relative flex items-center justify-between py-4">
             {{-- Logo --}}
-            <div class="absolute left-4 text-xl font-bold">
+            <div class="text-xl font-bold">
                 <a href="/">
                     <span class="text-white">Waste</span><span class="text-[#12D719]">Journey</span>
                 </a>
             </div>
 
-            {{-- Desktop Menu (Perfectly Centered) --}}
-            <div class="hidden lg:flex mx-auto justify-center items-center space-x-8">
+            {{-- Desktop Menu (Centered) --}}
+            <div class="hidden lg:flex items-center space-x-8 absolute inset-x-0 mx-auto w-max">
                 <a href="/" id="home" class="menu-item group relative py-2 text-white hover:text-[#12D719]">
                     Beranda
                     <span class="absolute bottom-0 left-0 block w-0 h-1 bg-[#12D719] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="/tentang" id="about" class="menu-item group relative py-2 text-white hover:text-[#12D719]">
                     Tentang
-                    <span class="absolute bottom-0 left-0 block w-0 h-1 bg-[#12D719] transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="/layanan" id="services" class="menu-item group relative py-2 text-white hover:text-[#12D719]">
-                    Layanan
                     <span class="absolute bottom-0 left-0 block w-0 h-1 bg-[#12D719] transition-all duration-300 group-hover:w-full"></span>
                 </a>
                 <a href="/blog" id="blog" class="menu-item group relative py-2 text-white hover:text-[#12D719]">
@@ -75,10 +71,10 @@
                 </a>
             </div>
 
-            {{-- Subscribe Button --}}
-            <div class="hidden lg:block absolute right-4">
-                <a href="#" class="inline-block px-6 py-3 rounded-full bg-green-600 hover:bg-green-700 text-white font-semibold text-lg transition-all duration-300 ease-in-out hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
-                    Berlangganan Sekarang
+            {{-- Button Bergabung --}}
+            <div class="hidden lg:flex">
+                <a href="/login" id="join" class="px-6 py-2 bg-[#12D719] text-white font-bold rounded-lg hover:bg-green-700 transition-all duration-300">
+                    Bergabung
                 </a>
             </div>
 
@@ -91,6 +87,8 @@
                 </button>
             </div>
         </div>
+
+
 
         {{-- Mobile Menu --}}
         <div id="mobile-menu" class="hidden lg:hidden pb-4">
